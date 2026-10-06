@@ -1,0 +1,20 @@
+# ============================================================
+#  开源项目列表 —— 渲染格式与论文卡片相同
+# ============================================================
+
+- title: "Project Name One: A Placeholder Open-Source Project"
+  authors: ""
+  venue: "Open Source"
+  summary: "A one-sentence description of what this project does."
+  image: /assets/paper_img/project1.svg
+  links:
+    - { name: Website, url: "https://example.com" }
+    - { name: Code, url: "https://github.com/your-github-id/example-repo", repo: "your-github-id/example-repo" }
+
+- title: "Project Name Two: Another Placeholder Project"
+  authors: ""
+  venue: "Open Source"
+  summary: "A one-sentence description of what this project does."
+  image: /assets/paper_img/project2.svg
+  links:
+    - { name: Code, url: "https://github.com/your-github-id/example-repo", repo: "your-github-id/example-repo" }

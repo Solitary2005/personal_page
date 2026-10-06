@@ -1,0 +1,29 @@
+# ============================================================
+#  论文列表 —— 每个条目渲染为一张论文卡片
+#  authors 支持 Markdown（用 **你的名字** 加粗自己）
+#  links.repo 填 "用户名/仓库名" 会自动显示 GitHub star 数
+# ============================================================
+
+- title: "Paper Title One: A Placeholder Paper"
+  authors: "Author One, **Your Name**, Author Two"
+  venue: "Conference Name, 2026"
+  image: /assets/paper_img/paper1.svg
+  links:
+    - { name: Paper, url: "https://arxiv.org/abs/xxxx.xxxxx" }
+    - { name: Project, url: "https://example.com" }
+    - { name: Code, url: "https://github.com/your-github-id/example-repo", repo: "your-github-id/example-repo" }
+
+- title: "Paper Title Two: Another Placeholder Paper"
+  authors: "**Your Name**, Collaborator A, Collaborator B"
+  venue: "Journal Name, 2025"
+  image: /assets/paper_img/paper2.svg
+  links:
+    - { name: Paper, url: "https://arxiv.org/abs/xxxx.xxxxx" }
+    - { name: Code, url: "https://github.com/your-github-id/example-repo", repo: "your-github-id/example-repo" }
+
+- title: "Paper Title Three: A Workshop Paper"
+  authors: "Collaborator C, **Your Name**"
+  venue: "Workshop at Conference Name, 2025"
+  image: /assets/paper_img/paper3.svg
+  links:
+    - { name: Paper, url: "https://arxiv.org/abs/xxxx.xxxxx" }

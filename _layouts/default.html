@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include nav.html %}
+
+  <div class="wrapper">
+    <header class="sidebar">
+      {% include sidebar.html %}
+    </header>
+
+    <section class="content">
+      {{ content }}
+    </section>
+
+    {% include footer.html %}
+  </div>
+
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/lang.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# 本地预览（无需安装 Ruby）：
+#   docker compose up
+#   然后打开 http://localhost:4000
+services:
+  jekyll-site:
+    image: jekyll/jekyll:pages
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - "4000:4000"
+    command: jekyll serve -H 0.0.0.0 --livereload

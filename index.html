@@ -1,0 +1,47 @@
+---
+layout: default
+title: ""
+# 开头引用（显示在内容区最上方，类似 DavidLXu 主页的 blockquote）
+quote_en: >-
+  I am deeply committed to advancing the field of robotics with a focus on the
+  integration of cognitive and athletic intelligence to create robotics
+  foundation models that could revolutionize our modern industry and society.
+quote_zh: >-
+  我长期专注于机器人领域的研究，致力于融合"认知智能"与"运动智能"，构建有望重塑现代工业与社会形态的机器人基础模型。
+---
+
+{% include quote.html %}
+
+<div class="section" id="about">
+  <h2 class="section-title" data-i18n-en="About Me" data-i18n-zh="关于我">About Me</h2>
+  <div class="section-body">
+    <div data-lang="en">
+      <p>I am <strong>{{ site.name }}</strong>, a PhD student at <strong>Your University</strong>, supervised by <a href="#">Prof. Advisor Name</a>.</p>
+      <p>My research focuses on <strong>robotics</strong>, <strong>embodied AI</strong>, and <strong>foundation models</strong>. I am particularly interested in building intelligent agents that can perceive, remember, plan, and act in open-world physical environments.</p>
+      <p>I am always happy to connect with researchers and collaborators. You can find my <a href="{{ site.cv_path | relative_url }}" target="_blank" rel="noopener">CV here</a>.</p>
+    </div>
+    <div data-lang="zh">
+      <p>我是 <strong>{{ site.name }}</strong>，目前在 <strong>某某大学</strong> 攻读博士学位，导师是 <a href="#">某某教授</a>。</p>
+      <p>我的研究方向包括<strong>机器人</strong>、<strong>具身智能</strong>和<strong>基础模型</strong>，尤其关注能够在开放物理环境中感知、记忆、规划并行动的智能体。</p>
+      <p>欢迎交流合作，我的<a href="{{ site.cv_path | relative_url }}" target="_blank" rel="noopener">简历在这里</a>。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="publications">
+  <h2 class="section-title" data-i18n-en="Publications" data-i18n-zh="论文">Publications</h2>
+  <div class="section-body media-list">
+    {% for pub in site.data.publications %}
+      {% include paper-card.html item=pub %}
+    {% endfor %}
+  </div>
+</div>
+
+<div class="section" id="projects">
+  <h2 class="section-title" data-i18n-en="Projects" data-i18n-zh="项目">Projects</h2>
+  <div class="section-body media-list">
+    {% for proj in site.data.projects %}
+      {% include paper-card.html item=proj %}
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,6 @@
+{%- assign tag = include.tag -%}
+{%- assign label_zh = tag -%}
+{%- for cat in site.blog_categories -%}
+  {%- if cat.tag == tag -%}{%- assign label_zh = cat.label_zh -%}{%- endif -%}
+{%- endfor -%}
+<span class="blog-tag" data-i18n-en="{{ tag }}" data-i18n-zh="{{ label_zh }}">{{ tag }}</span>

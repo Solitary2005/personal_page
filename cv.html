@@ -1,0 +1,41 @@
+---
+layout: default
+title: CV
+permalink: /cv/
+---
+
+<div class="section">
+  <h2 class="section-title" data-i18n-en="Curriculum Vitae" data-i18n-zh="简历">Curriculum Vitae</h2>
+  <div class="section-body">
+
+    <div class="cv-download">
+      <a class="btn" href="{{ site.cv_path | relative_url }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM80 432c0 8.8 7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96c-8.8 0-16 7.2-16 16zm48-64c0 8.8 7.2 16 16 16h64c39.8 0 72-32.2 72-72s-32.2-72-72-72H144c-8.8 0-16 7.2-16 16v112zm32-32v-48h48c22.1 0 40 17.9 40 40s-17.9 40-40 40H160zm112 0c0 8.8 7.2 16 16 16h48c8.8 0 16-7.2 16-16s-7.2-16-16-16H288c-8.8 0-16 7.2-16 16zm-128 64c0 8.8 7.2 16 16 16H304c8.8 0 16-7.2 16-16s-7.2-16-16-16H160c-8.8 0-16 7.2-16 16z"/></svg>
+        <span data-i18n-en="Download CV (PDF)" data-i18n-zh="下载简历（PDF）">Download CV (PDF)</span>
+      </a>
+    </div>
+
+    <h3 data-i18n-en="Education" data-i18n-zh="教育经历">Education</h3>
+    <ul class="cv-list">
+      {% for item in site.data.cv.education %}
+      <li>
+        <p class="cv-item-title" data-i18n-en="{{ item.title_en }}" data-i18n-zh="{{ item.title_zh }}">{{ item.title_en }}</p>
+        <p class="cv-item-detail">{{ item.detail }}</p>
+        <p class="cv-item-period">{{ item.period }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h3 data-i18n-en="Experience" data-i18n-zh="科研经历">Experience</h3>
+    <ul class="cv-list">
+      {% for item in site.data.cv.experience %}
+      <li>
+        <p class="cv-item-title" data-i18n-en="{{ item.title_en }}" data-i18n-zh="{{ item.title_zh }}">{{ item.title_en }}</p>
+        <p class="cv-item-detail">{{ item.detail }}</p>
+        <p class="cv-item-period">{{ item.period }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</div>

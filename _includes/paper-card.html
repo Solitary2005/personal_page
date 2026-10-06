@@ -1,0 +1,20 @@
+<article class="media-card">
+  <div class="media-thumb">
+    <img src="{{ include.item.image | relative_url }}" alt="{{ include.item.title }}">
+  </div>
+  <div class="media-content">
+    <div class="media-title">{{ include.item.title }}</div>
+    {% if include.item.authors and include.item.authors != "" %}
+    <div class="media-author">{{ include.item.authors | markdownify }}</div>
+    {% endif %}
+    <div class="media-meta"><em><strong>{{ include.item.venue }}</strong></em></div>
+    {% if include.item.summary %}
+    <p class="media-summary">{{ include.item.summary }}</p>
+    {% endif %}
+    <div class="media-links">
+      {% for link in include.item.links %}
+      <a href="{{ link.url }}" target="_blank" rel="noopener"{% if link.repo %} data-github-repo="{{ link.repo }}"{% endif %}>{{ link.name }}{% if link.repo %}<span class="github-stars" aria-label="GitHub stars"></span>{% endif %}</a>
+      {% endfor %}
+    </div>
+  </div>
+</article>

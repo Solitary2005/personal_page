@@ -1,0 +1,53 @@
+# ============================================================
+#  个人主页站点配置 —— 修改这里的个人信息
+#  部署于 username.github.io 根路径，baseurl 保持为空
+# ============================================================
+
+title: Personal page
+name: Wenjun Zhu
+email: solitary2025@gmail.com
+description: >- # 站点描述（搜索引擎用）
+  Personal academic homepage.
+url: "https://solitary2005.github.io" # 改为你的 GitHub Pages 地址
+baseurl: "" # 部署在 username.github.io 根路径，保持为空
+github_username: solitary2005 # 你的 GitHub 用户名
+
+# 社交图标（sidebar 使用）
+social:
+  - { icon: envelope, url: "mailto:solitary2025@gmail.com", title: "Email" }
+  - { icon: github, url: "https://github.com/solitary2005", title: "GitHub" }
+  - { icon: pdf, url: "/assets/cv/CV.pdf", title: "CV" }
+
+# 头像与简历
+avatar: /assets/img/avatar.jpg
+cv_path: /assets/cv/CV.pdf
+
+# 博客分类（对应文章 front matter 里的 tags 值）
+# 新增分类时在这里加一行，并在文章 tags 里用相同的 tag 值
+blog_categories:
+  - { slug: paper-notes, tag: "Paper Notes", label_zh: "论文笔记" }
+  - { slug: personal-thoughts, tag: "Personal Thoughts", label_zh: "个人思考" }
+  - { slug: book-notes, tag: "Book Notes", label_zh: "读书笔记" }
+
+# ============================================================
+#  构建配置（一般无需修改）
+# ============================================================
+markdown: kramdown
+permalink: /posts/:year/:month/:title/
+exclude:
+  - README.md
+  - docker-compose.yaml
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .gitignore
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

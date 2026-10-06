@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <span class="post-date">{{ page.date | date: "%Y.%m.%d" }}</span>
+      {% for tag in page.tags %}{% include blog-tag.html tag=tag %}{% endfor %}
+    </div>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <a class="post-back" href="{{ '/blog/' | relative_url }}">&larr; <span data-i18n-en="Back to blog" data-i18n-zh="返回博客列表">Back to blog</span></a>
+</article>
