@@ -1,6 +1,6 @@
 # 个人科研主页
 
-基于 [Jekyll](https://jekyllrb.com/) 的轻量个人学术主页，部署于 GitHub Pages。布局参考 zhangzhengtu.github.io（左侧固定侧边栏 + 顶部导航 + 论文卡片），配色与中英切换方案参考 DavidLXu.github.io。
+基于 [Jekyll](https://jekyllrb.com/) 的轻量个人学术主页，部署于 GitHub Pages
 
 ## 本地预览
 
@@ -73,7 +73,8 @@ excerpt: "一句话摘要，显示在博客列表。"
 
 ### 博客分类
 
-默认三类（对应 DavidLXu 的分类体系）：**论文笔记**（Paper Notes）、**个人思考**（Personal Thoughts）、**读书笔记**（Book Notes）。新增分类：在 `_config.yml` 的 `blog_categories` 加一行，写文章时 tags 用对应的 `tag` 值即可。
+**论文笔记**（Paper Notes）、**个人思考**（Personal Thoughts）、**读书笔记**（Book Notes）
+新增分类：在 `_config.yml` 的 `blog_categories` 加一行，写文章时 tags 用对应的 `tag` 值即可。
 
 ## 目录结构
 
