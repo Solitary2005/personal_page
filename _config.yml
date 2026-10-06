@@ -1,6 +1,6 @@
 # ============================================================
 #  个人主页站点配置 —— 修改这里的个人信息
-#  部署于 username.github.io 根路径，baseurl 保持为空
+#  部署于项目仓库 personal_page（站点路径 /personal_page/）
 # ============================================================
 
 title: Personal page
@@ -9,7 +9,7 @@ email: solitary2025@gmail.com
 description: >- # 站点描述（搜索引擎用）
   Personal academic homepage.
 url: "https://solitary2005.github.io" # 改为你的 GitHub Pages 地址
-baseurl: "" # 部署在 username.github.io 根路径，保持为空
+baseurl: "/personal_page" # 项目仓库名；若改部署到 username.github.io 根路径则改回 ""
 github_username: solitary2005 # 你的 GitHub 用户名
 
 # 社交图标（sidebar 使用）

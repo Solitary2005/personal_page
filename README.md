@@ -8,7 +8,7 @@
 
 ```bash
 docker compose up
-# 打开 http://localhost:4000
+# 打开 http://localhost:4000/personal_page/（路径含 baseurl）
 ```
 
 **方式二：本机 Ruby**
@@ -16,15 +16,15 @@ docker compose up
 ```bash
 bundle install
 bundle exec jekyll serve
+# 同样打开 http://localhost:4000/personal_page/
 ```
 
 ## 部署到 GitHub Pages
 
-1. 在 GitHub 新建仓库 `你的用户名.github.io`
-2. 推送本目录内容到该仓库的默认分支（main）
-3. 打开仓库 Settings → Pages，确认 Source 为 main 分支根目录
-4. 等几分钟构建完成后访问 `https://你的用户名.github.io`
-5. 修改 `_config.yml` 中的 `url` 为你的站点地址
+1. 推送到 GitHub 仓库 `personal_page` 的 main 分支
+2. 打开仓库 Settings → Pages，确认 Source 为 main 分支根目录
+3. 等几分钟构建完成后访问 `https://solitary2005.github.io/personal_page/`
+4. 若以后想用根路径域名（`solitary2005.github.io`）：把仓库改名为 `solitary2005.github.io`，并把 `_config.yml` 里的 `baseurl` 改回 `""`
 
 ## 修改个人信息
 
@@ -35,7 +35,7 @@ bundle exec jekyll serve
 | About 简介（中/英） | `index.html` 的 about 区块 |
 | 简历 PDF | `assets/cv/CV.pdf`（替换占位文件） |
 | CV 页教育/经历条目 | `_data/cv.yml` |
-| 头像 | `assets/img/avatar.svg`（可换成自己的照片） |
+| 头像 | `assets/img/avatar.jpg`（替换成自己的照片，格式不限） |
 
 ## 修改论文和项目
 
